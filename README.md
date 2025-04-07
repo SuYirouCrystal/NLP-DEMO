@@ -21,6 +21,7 @@ Ensure you have Python installed (Python 3.7 or later is recommended) and instal
 
 ```bash
 pip install kagglehub transformers torch scikit-learn pandas tqdm
+```
 
 Usage
 Download the Dataset:
