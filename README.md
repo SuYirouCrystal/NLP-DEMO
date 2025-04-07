@@ -11,9 +11,16 @@ The repository is organized into three main Python scripts:
 
 ## Data File
 
-Not uploaded: Sentiment140 dataset with 1.6 million tweets
-https://www.kaggle.com/datasets/kazanova/sentiment140
+Not uploaded. You may use it directly from Kagge:
 
+```python
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("kazanova/sentiment140")
+
+print("Path to dataset files:", path)
+```
 
 ## Requirements
 
