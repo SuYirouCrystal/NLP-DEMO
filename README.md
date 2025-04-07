@@ -96,6 +96,41 @@ This will:
 4. Fine-tune the BERT model on the Sentiment140 dataset.
 5. Save the fine-tuned model in the sentiment140-bert-model folder.
 
+## Optional: Push Model to Hugging Face Hub
+After training, you may want to share your fine-tuned model with the community or integrate it into other projects. Follow these steps to push your model to the Hugging Face Hub:
+
+### Install the Hugging Face Hub CLI:
+
+If you haven’t already, install the CLI using:
+
+```bash
+pip install huggingface_hub
+```
+
+### Log in to Your Hugging Face Account:
+
+Run the following command and enter your credentials when prompted:
+
+```bash
+huggingface-cli login
+```
+
+### Push the Model:
+
+You can add the following code snippet to train.py after training and saving your model:
+
+```python
+# Push the model and tokenizer to Hugging Face Hub
+model.push_to_hub("your-username/sentiment140-bert-model")
+tokenizer.push_to_hub("your-username/sentiment140-bert-tokenizer")
+```
+
+Replace "your-username/sentiment140-bert-model" with your desired repository name. Alternatively, you can manually upload the files via the Hugging Face Hub website.
+
+### Verify on the Hub:
+
+Visit https://huggingface.co/models and search for your model repository to confirm the upload.
+
 ## Notes
 ### Batch Size:
 While the default example uses a batch size of 32, for production or more intensive training scenarios, a batch size of 128 can be used if GPU resources allow. Adjust the batch_size parameter in DataLoader accordingly.
