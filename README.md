@@ -110,7 +110,7 @@ Fine-tuning on a large dataset like Sentiment140 may require significant computa
 Feel free to adjust hyperparameters such as learning rate, number of epochs, and gradient accumulation steps (if needed) in train.py to better suit your environment and training goals.
 
 ## License
-This project is provided for educational purposes. Be sure to check the licensing for the Sentiment140 dataset and any third-party libraries used.
+This project is provided for educational purposes.
 
 ## Acknowledgments
 Hugging Face Transformers
