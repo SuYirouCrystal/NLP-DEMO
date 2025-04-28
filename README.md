@@ -1,4 +1,4 @@
-# Sentiment Analysis with BERT on Sentiment140 (COMS 4705 Natural Language Processing)
+# COMS 4705 Natural Language Processing — Sentiment Analysis with BERT on Sentiment140
 
 Thanks for your attention in class! This demo demonstrates how to fine-tune a BERT model (using `bert-base-uncased`) for sentiment classification on the [Sentiment140 dataset](https://www.kaggle.com/datasets/kazanova/sentiment140). The dataset contains 1.6 million tweets labeled as positive or negative, and the project leverages the Hugging Face Transformers library with PyTorch.
 
